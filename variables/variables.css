@@ -1,0 +1,41 @@
+/* css variables work lie any other attr except you define the propert custom */
+/* most of the time we define css variables in the html or root tag */
+/* a css variable is any propert that starts with two hyphens, the name of  */
+
+:root {
+	--div-background-volor: red;
+	--text-color:black;
+	--div-padding: 10px;
+	--div-margin:10px;
+}
+
+/* applying our variables */
+/* use the var function to apply a variable */
+.child {
+	background-color: var(--div-background-volor);
+	padding: var(--div-padding);
+	margin: var(--div-margin);
+}
+
+/* we can override it now with specificity since we defined the viarables in the rot  */
+.one {
+
+}
+
+/* if a variable is not defined we can pass in a default value */
+body {
+	background-color: var(--bg-body, pink);
+}
+
+.two {
+
+}
+
+#dark-theme-btn {
+
+}
+
+
+#light-theme-btn {
+
+}
